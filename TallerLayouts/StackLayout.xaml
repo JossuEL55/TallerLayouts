@@ -1,0 +1,11 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TallerLayouts.Pages.StackLayout">
+    <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+        <Label Text="Los Grand Theft Auto" FontSize="20" />
+        <Label Text="son los mejores juegos" FontSize="30" />
+        <Label Text="de la historia" FontSize="40" />
+        <Button Text="Ir al FlexLayout"
+                Clicked="OnNavigateToFlexLayout" />
+    </StackLayout>
+</ContentPage>

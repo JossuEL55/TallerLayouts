@@ -1,0 +1,37 @@
+
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TallerLayouts.Pages.GridLayout">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+     
+        <BoxView Grid.Row="0" Grid.Column="0" Color="Red" />
+
+     
+        <BoxView Grid.Row="0" Grid.Column="1" Color="Blue" />
+
+        <BoxView Grid.Row="1" Grid.Column="0" Color="Green" />
+
+        <Grid Grid.Row="1" Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+
+            <BoxView Grid.Row="0" Color="Yellow" />
+
+            <StackLayout Grid.Row="1">
+                <Button Text="Ir al StackLayout"
+                        Clicked="OnNavigateToStackLayout" />
+            </StackLayout>
+        </Grid>
+    </Grid>
+</ContentPage>

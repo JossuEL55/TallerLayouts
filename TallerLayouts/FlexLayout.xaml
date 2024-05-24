@@ -1,0 +1,34 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TallerLayouts.Pages.FlexLayout">
+    <FlexLayout Direction="Column">
+
+        <FlexLayout Margin="10,20">
+            <FlexLayout.GestureRecognizers>
+                <TapGestureRecognizer Tapped="OnImageClicked" />
+            </FlexLayout.GestureRecognizers>
+            <Image Source="gtav.png" WidthRequest="70" HeightRequest="70"
+                   VerticalOptions="Center" HorizontalOptions="Start" Margin="0,0,10,0" />
+            <Label Text="Grand Theft Auto V" VerticalOptions="Center" HorizontalOptions="Start"
+                   FontSize="18" Margin="0,0,0,0"/>
+        </FlexLayout>
+        <FlexLayout Margin="10,20">
+            <FlexLayout.GestureRecognizers>
+                <TapGestureRecognizer Tapped="OnImageClicked" />
+            </FlexLayout.GestureRecognizers>
+            <Image Source="gtasa.png" WidthRequest="70" HeightRequest="70"
+                   VerticalOptions="Center" HorizontalOptions="Start" Margin="0,0,10,0" />
+            <Label Text="Grand Theft Auto San Andreas" VerticalOptions="Center" HorizontalOptions="Start"
+                   FontSize="18" Margin="0,0,0,0"/>
+        </FlexLayout>
+        <FlexLayout Margin="10,20">
+            <FlexLayout.GestureRecognizers>
+                <TapGestureRecognizer Tapped="OnImageClicked" />
+            </FlexLayout.GestureRecognizers>
+            <Image Source="gtavice.png" WidthRequest="70" HeightRequest="70"
+                   VerticalOptions="Center" HorizontalOptions="Start" Margin="0,0,10,0" />
+            <Label Text="Grand Theft Auto Vice City" VerticalOptions="Center" HorizontalOptions="Start"
+                   FontSize="18" Margin="0,0,0,0"/>
+        </FlexLayout>
+    </FlexLayout>
+</ContentPage>
